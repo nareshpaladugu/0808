@@ -1,0 +1,5 @@
+package com.nareshcompany.utilities;
+
+public class EmailUtil {
+
+}

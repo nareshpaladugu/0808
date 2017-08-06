@@ -1,0 +1,15 @@
+package com.nareshcompany.testscripts;
+
+import org.testng.annotations.Test;
+
+import com.nareshcompany.businessmethods.FacebookHomePage;
+import com.nareshcompany.utilities.TestFailedException;
+
+public class HtmlObjTest {
+
+	@Test
+	public void genericHtmlTest() throws TestFailedException, Exception
+	{
+		genericp = new FacebookHomePage(driver);
+	}
+}

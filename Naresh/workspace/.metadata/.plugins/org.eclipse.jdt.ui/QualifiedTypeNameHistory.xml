@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.nareshcompany.testscripts.FacebookTest"/>
+<fullyQualifiedTypeName name="com.nareshcompany.businessmethods.FacebookHomePage"/>
+<fullyQualifiedTypeName name="com.nareshcompany.objectrepository.FacebookRepo"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.remote.RemoteWebDriver"/>
+<fullyQualifiedTypeName name="com.nareshcompany.config.Configurations"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+</qualifiedTypeNameHistroy>

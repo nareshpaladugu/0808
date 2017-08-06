@@ -1,0 +1,9 @@
+@BeforeMethod
+@AfterMethod
+
+
+@BeforeSuite
+
+@AfrerSuite
+
+EvenFiringWebDriver

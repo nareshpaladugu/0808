@@ -1,0 +1,58 @@
+package com.nareshcompany.utilities;
+import java.util.Properties;
+
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+public class SendMail {
+
+
+	public static void sendEmail(String to)
+	{
+
+
+        String from = "xyz.com";
+        String to = "abc.com";
+        String subject = "Your Subject.";
+        String message = "Message Text.";
+        String login = "xyz.com";
+        String password = "password";
+
+        Properties props = new Properties();
+        props.setProperty("mail.host", "smtp.gmail.com");
+        props.setProperty("mail.smtp.port", "587");
+        props.setProperty("mail.smtp.auth", "true");
+        props.setProperty("mail.smtp.starttls.enable", "true");
+
+        Authenticator auth = new SMTPAuthenticator(login, password);
+
+        Session session = Session.getInstance(props, auth);
+
+        MimeMessage msg = new MimeMessage(session);
+
+       try
+       {
+            msg.setText(message);
+            msg.setSubject(subject);
+            msg.setFrom(new InternetAddress(from));
+            msg.addRecipient(Message.RecipientType.TO, 
+            new InternetAddress(to));
+            Transport.send(msg);
+       }
+       catch (MessagingException ex)
+       {
+       }
+       
+	}
+
+
+	public static void main(String[] args) 
+	{
+		sendEmail("ddaphal@searshc.com");
+	}
+}

@@ -1,0 +1,40 @@
+package com.nareshcompany.utilities;
+
+public class EmailUtil {
+
+	public static void sendEmailWithDetails(String customSubject, String customBody,String time, File file)
+	{
+		if(!LoadProperties.EMAIL_FLAG)
+			return;
+		String host = "mailhost.prod.ch3.s.com";
+		String from = "content.automation@searshc.com";
+		String[] cc = {""};
+		try {
+
+			String emailRecipients =  LoadProperties.EMAIL_RECEPIENTS;
+			String emailRecipientsCC =  LoadProperties.EMAIL_RECEPIENTS_CC;
+
+			String[] toList = emailRecipients.split(",");
+
+			if(emailRecipientsCC!=null)
+			{
+				cc = emailRecipientsCC.split(",");
+			}
+
+			String sMailBodyTextSummary =  "<font face='Calibri' color='black' size='2'><B>***NOTE: This is an auto generated mail.***" +
+					"<br><span style='font-family:Calibri, Arial; font-size:1em; font-weight:bold;'>";
+
+			sMailBodyTextSummary += "<br><font face='Calibri' color='black' size='3'> Bucket No(s). : "
+			+ LoadProperties.RUN_PARAMS+"<br>GB : "+LoadProperties.GREENVIP
+			+ "<br><br> Execution Time(HH:MM:ss) : "+time;
+			
+			String regards = "<font face='Calibri' color='black' size='2'><B><br><br>Regards, <br>Content Automation<br>";
+
+			SendAutoEmail.sendMailUsingJavaMail(host, from, toList, cc,customSubject , sMailBodyTextSummary+customBody+ regards, file);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

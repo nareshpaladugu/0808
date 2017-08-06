@@ -1,0 +1,14 @@
+package com.nareshcompany.objectrepository;
+
+import org.openqa.selenium.By;
+
+public class SearsRepo 
+{	
+	public static final By txt_search    = By.name("keyword");
+	public static final By btn_go    = By.id("goBtn");
+	public static final By link_Chat    = By.linkText("Chat");
+	
+	
+	public static final By txt_visitorName    = By.name("visitorName");
+	
+}

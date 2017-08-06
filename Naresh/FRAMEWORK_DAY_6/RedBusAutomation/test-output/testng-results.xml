@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56057" started-at="2017-07-18T01:17:56Z" finished-at="2017-07-18T01:18:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56057" started-at="2017-07-18T01:17:56Z" finished-at="2017-07-18T01:18:52Z">
+      <class name="in.redbus.testscripts.RedBusSearchTest_001">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350]" name="startUp" is-config="true" duration-ms="205" started-at="2017-07-18T06:47:55Z" finished-at="2017-07-18T06:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="testScriptSetup(java.lang.reflect.Method)[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350]" name="testScriptSetup" is-config="true" duration-ms="15322" started-at="2017-07-18T06:47:56Z" finished-at="2017-07-18T06:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void in.redbus.testscripts.RedBusSearchTest_001.redBusSearchTest_001() throws in.redbus.utilities.TestFailedException,java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScriptSetup -->
+        <test-method status="PASS" signature="redBusSearchTest_001()[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350]" name="redBusSearchTest_001" duration-ms="37484" started-at="2017-07-18T06:48:11Z" finished-at="2017-07-18T06:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redBusSearchTest_001 -->
+        <test-method status="PASS" signature="shutDown(org.testng.ITestResult)[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350]" name="shutDown" is-config="true" duration-ms="3090" started-at="2017-07-18T06:48:48Z" finished-at="2017-07-18T06:48:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=redBusSearchTest_001 status=SUCCESS method=RedBusSearchTest_001.redBusSearchTest_001()[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+        <test-method status="PASS" signature="endExecution()[pri:0, instance:in.redbus.testscripts.RedBusSearchTest_001@548e7350]" name="endExecution" is-config="true" duration-ms="61" started-at="2017-07-18T06:48:52Z" finished-at="2017-07-18T06:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endExecution -->
+      </class> <!-- in.redbus.testscripts.RedBusSearchTest_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
